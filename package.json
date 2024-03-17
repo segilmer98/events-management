@@ -1,0 +1,18 @@
+{
+  "name": "events-management",
+  "version": "1.0.0",
+  "description": "events management service",
+  "main": "src/index.js",
+  "scripts": {
+    "tunnel": "ssh -N -p 22 root@wickedwishes.co.uk -L 3306:localhost:3306",
+    "run": "node --env-file=.env src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.2"
+  }
+}
